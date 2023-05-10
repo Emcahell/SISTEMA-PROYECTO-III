@@ -1,0 +1,98 @@
+:root{
+    --primary: #6c63ff;
+    --color-hover: #efefef;
+    --text: #161617;
+    --text-p: #656565;
+    --header: #fff;
+}
+body{
+    font-family: sans-serif;
+    background-color: #4b8534;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.parent{
+    display: flex;
+    height: 500px;
+    width: 800px;
+    background: #161617;
+    overflow: hidden;
+    box-shadow: 0px 10px 18px rgba(0 0 0 / .3);
+}
+.container-login{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    background: #fff;
+    padding: 10px 50px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    /* background: #656565; */
+    height: 30px;
+}
+
+.title h1{
+    font-size: 30px;
+    font-weight: lighter;
+    color: #000;
+}
+
+.text p{
+    font-size: 13px;
+    color: #656565;
+    letter-spacing: .8px;
+}
+
+.inputs{
+    margin: 30px 0;
+    /* background: #6c63ff; */
+}
+
+.inputs input {
+    width: 95.5%;
+    height: 32px;
+    margin: 8px 0;
+    outline: none;
+    border: none;
+    background: rgba(0 0 0 / .1);
+    padding-left: 10px;
+    letter-spacing: .3px;
+}
+
+.submit button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: #5db1ff;
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: .2s ease;
+}
+
+.submit button:hover {
+    background: #6c63ff;
+}
+
+.fondo {
+    width: 60%;
+    height: 100%;
+}
+
+.fondo img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,600;1,300;1,400&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+	font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --primary: #6c63ff;
+    --color-hover: #efefef;
+    --text: #161617;
+    --text-p: #656565;
+    --config: #1e1e27;
+    --header: #fff;
+}
+
+body{
+	background: radial-gradient(circle, #fff 50%, rgba(0, 0, 0, 0.13)) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+/* ...:::::::Barra de navegación:::::::::.... */
+
+.barra {
+    align-items: center;
+    background-color: var(--header);
+    box-shadow: 10px 0 15px rgba(0,0,0,.5);
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    padding: 20px 30px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    transition: .4s ease-in-out; 
+    width: 100%;
+    z-index: 90;
+    margin-bottom: 86px;
+}
+
+/* Animacion scroll :::::......... */
+
+/* :::::::::...................... */
+
+.logo {
+    color: var(--text);
+    font-size: 25px;
+    font-weight: 600;
+    font-weight: lighter;
+    margin: 10px;
+} 
+
+.logo span {
+    color: var(--primary);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.enlaces-a {
+    width: 45%;
+}
+
+.enlaces-a ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.enlaces-a ul li a {
+    font-size: 15px;
+    color: var(--text);
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    transition: .2s ease;
+}
+
+.enlaces-a ul li a:hover {
+    color: var(--primary);
+}
+
+.enlaces-a .menu-vertical{
+    position: absolute;
+    display: none;
+    width: 130px;
+    background: var(--primary);
+    transition: .2s ease;
+}
+
+.enlaces-a li:hover .menu-vertical {
+    display: block;
+}
+
+.enlaces-a .menu-vertical li a{
+    display: block;
+    color: var(--header);
+    padding: 10px 10px 10px;
+}
+
+.enlaces-a .menu-vertical a:hover{
+    color: var(--text);
+}
+
+.b-busqueda {
+    margin-right: 20px;
+    position: relative;
+}
+
+.b-busqueda label span{
+    pointer-events: none;
+    position: absolute;
+    right: 6px;
+    top: 7px;
+}
+
+.busqueda {
+    background: none;
+    border: 2px solid var(--text);
+    border-radius: 20px;
+    outline: none;
+    padding: 6px 10px;
+    transition: .2s ease-in-out all;
+    width: 60px;
+}
+
+.busqueda:focus, 
+.busqueda:valid {
+    width: 200px;
+}
+
+/*============== menu de config ===============*/
+
+.main{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.menu {
+    background-color: var(--primary);
+    box-shadow: 5px 0 5px rgba(0,0,0,.3);
+    height: 100vh;
+    padding: 200px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.menu ul li {
+    border-bottom: 1px solid var(--color-hover);
+}
+
+.menu ul li a {
+    box-shadow: 5px 0 rgba(0 0 0 /.8) inset;
+    color: #fff;
+    display: block;
+    padding: 20px 0;
+    position: relative;
+    transition: .2s ease-in;
+    width: 100%;
+}
+
+.menu .spanA {
+    bottom: 36%; 
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+    pointer-events: none;
+}
+
+.menu ul li a:hover {
+    box-shadow: 200px 0 rgba(0,0,0,.8) inset;
+}
+
+/* ========= Contenido de la pagina: formulario-registro ========*/
+
+.CRegist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    width: 1000px;
+    margin: auto;
+}
+
+.tarjetR {
+    background-color: var(--header);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin: 10px 10px;
+    margin-top: -6%;
+    padding: 50px 30px;
+    position: relative;
+    width: 70%;
+}
+
+.form-registro{
+    padding: 10px 2px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-registro h1 {
+    text-align: center;
+    font-weight: bold;
+    margin: 15px 2px;
+    padding: 5px 40px;
+    border-bottom: 4px solid var(--primary);
+    color: var(--text);
+    width: 290px;
+}
+
+.form-registro h1 span {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.form-registro form{
+    display: flex;
+    flex-direction: column;
+    padding: 7px 17px;
+    width: 100%;
+}
+
+.form-registro .Container-input{
+    display: flex;
+    padding: 10px;
+}
+
+.form-registro .Container-input .inputs{
+    width: 500px;
+    height: 340px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.Ainput{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 50px;
+    justify-content: space-around;
+    margin: 5px 0;
+}
+
+.Ainput label {
+    margin-bottom: 3px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    color: var(--text);
+}
+.Ainput input,
+.select_c {
+    width: 190px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    transition: .4s ease-in-out;
+    border: 2px solid rgba(0, 0, 0, .4);
+    padding: 10px;
+    font-size: 15px;
+}
+
+.Ainput input:focus {
+    border: 2px solid rgba(0, 0, 0, .7);
+}
+
+
+.Ainput.c_sex .sexo{
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Ainput.c_sex .sexo div {
+    display: flex;
+    width: 90px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 3px;
+}
+
+.Ainput.c_sex .sexo input {
+    width: 19px;
+}
+
+.Cimg{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 250px;
+    padding-top: 90px;
+}
+
+.SubirF {
+    width: 180px;
+    height: 180px;
+    position: relative;
+}
+
+
+.iconP {
+    background-color: var(--primary);
+    bottom: 3px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    right: 13%;
+    padding: 10px;
+    position: absolute;
+    z-index: 5;
+}
+
+.ImgS {
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    transition: .3s ease all;
+    height: 175px;
+    width: 175px;
+}
+
+.preview {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.ImgS .iconPLUS {
+    background-color: rgba(0,0,0,.2);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    height: 50px;
+    left: 30%;
+    opacity: 0;
+    padding: 16px;
+    position: absolute;
+    top: 30%;
+    transition: .2s ease all;
+    width: 50px;
+    z-index: 4;
+    
+}
+
+.ImgS:hover .iconPLUS {
+    font-size: 50px;
+    width: auto;
+    height: auto;
+    left: 0;
+    opacity: 1;
+    padding: 40%;
+    top: 0;
+}
+
+.form-registro form input[type="file"] {
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 6;
+}
+
+.form-registro button {
+    background-color: var(--primary);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 18px auto;
+    padding: 7px;
+    outline: none;
+    width: 60%;
+    height: 50px;
+    cursor: pointer;
+    transition: .2s ease-in-out all;
+}
+
+.form-registro button:hover {
+    background-color: var(--text);
+    
+}
+
+/* ------------------ Contenido de pagina: cargos -----------*/
+
+.tablaC {
+    width: 60%;
+    overflow-x: scroll;
+    margin: 20px auto;
+    background: var(--header);
+    padding: 20px 17px;
+    box-shadow: 0 10px 10px rgba(0 0 0 / .2);  
+}
+
+.tablaC h2 {
+    color: var(--text);
+    font-size: 30px;
+    font-weight: unset;
+    letter-spacing: 1px;
+}
+
+.tablaC .asistencia {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.tablaC .CregisA {
+    display: flex;
+    gap: 3px;
+}
+
+.tablaC .asistencia input {
+    height: 35px;
+    width: 180px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.tablaC .asistencia button {
+    height: 35px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background: var(--primary);
+    color: var(--header);
+    font-size: 15px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    transition: .2s ease;
+}
+
+.tablaC .asistencia button:hover {
+    background: var(--text);
+}
+
+.tablaC table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    box-shadow: 2px 0 10px rgba(0,0,0,.2);
+    letter-spacing: 1px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.tablaC table thead {
+    background-color: var(--primary);
+    color: var(--header);    
+}
+
+.tablaC table th, td {
+    font-size: 14.5px;
+    text-transform: capitalize;
+    font-weight: inherit;
+    padding: 8px 18px;
+}
+
+.tablaC th, td {
+    
+    padding: 7px 0;
+}
+
+.tablaC table tbody {
+    background-color: rgb(243, 245, 253);
+}
+
+.tablaC table tr:nth-child(even) {
+    background-color: var(--primary);
+    color: var(--header);
+}
+
+.tablaC table tbody tr:hover {
+    background-color: var(--text);
+    color: var(--header);
+}
+
+.icon-delete{
+    color: var(--text);
+}
+.icon-panel{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 10px;
+}
