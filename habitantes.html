@@ -10,9 +10,13 @@
   <script src="/icons/all.min.js"></script>
 </head>
 <body>
+
 	<div class="container">
+
     <div id="barra" class="barra">
-        <h1><a class="logo" href="#"><span>C</span>ondominio</a></h1>
+        <h1>
+          <a class="logo" href="#"><span>C</span>ondominio</a>
+        </h1>
 
             <nav class="enlaces-a">
             	<ul>
@@ -54,46 +58,56 @@
             			<a href="#">Reportes</a>
             			<ul class="menu-vertical">
             				<li>
-            				    <a href="#">Reportes</a>
+            				    <a href="reportes.html">Reportes</a>
             				</li> 
             				<li>
-            					<a href="#">Pagos</a>
+            					<a href="pagos.html">Pagos</a>
             				</li>
             				<li>
-            					<a href="#">Solvencias</a>
+            					<a href="solvencia.html">Solvencias</a>
             				</li>
             			</ul>
             		</li>
             	</ul>
             </nav>
+
         <div class="b-busqueda">
     	   <form action="">
     		   <input type="text" name="buscar" class="busqueda" autocomplete="off" placeholder="Buscar">
     		   <!-- <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button> -->
     	   </form>
         </div>
+
     </div>                                                                                                        
 
     <div class="main">
-            <div class="menu">
-                <ul>
-                    <li><a href="#"><span class="fa fa-check spanA"></span>Configuracion</a></li>
-                    <li><a href="#"><span class="fa fa-check spanA"></span>Admin</a></li>
-                    <li><a href="login.html"><span class="fa fa-check spanA"></span>Salir</a></li>
-                </ul>
-            </div> 
-    </div>  
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="#">Config<i class="fa fa-pencil spanA"></i></a>
+               </li>
+                <li>
+                     <a href="#">Admin<i class="fa fa-user spanA"></i></a>
+               </li>
+                <li>
+                    <a href="login.html">Salir<i class="fa fa-power-off spanA"></i></a>
+                 </li>
+            </ul>
+        </div> 
+  </div>  
 
 <!-- FORMULARIO-REGISTRO-EMPELADOS -->
 
 	<div class="contenido CRegist">
 
       <div class="form-registro tarjetR">
+
         <div class="title">
           <h1>
             <span>H</span>abitantes <span class="fa fa-check"></span>
           </h1>
         </div>
+
         <form name="">
           <div class="Container-input">
             <div class="inputs">
@@ -131,9 +145,13 @@
               <div class="Ainput">
                 <label for="cargo">Zona</label>
                 <select name="zona" class="select_c">
-                    <option></option>
+                    <option value="">Mustang</option>
+                    <option value="">Challenger</option>
+                    <option value="">Camaro</option>
+                    <option value="">Twingo</option>
                 </select>
               </div>
+
             </div>
 
             <div class="Cimg">
@@ -145,11 +163,12 @@
                 </div>
                 <span class="fa fa-camera iconP"></span>
               </div>
-
             </div>
-          </div>
+
+          </div>        
           <button type="submit" id="btn">Continuar</button>
         </form>
+
       </div>
     </div>
 

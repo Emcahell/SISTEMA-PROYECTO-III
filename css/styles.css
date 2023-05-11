@@ -473,14 +473,14 @@ body{
 .tablaC table {
     border-spacing: 0;
     border-collapse: collapse;
-    box-shadow: 2px 0 10px rgba(0,0,0,.2);
+    box-shadow: 2px 2px 10px #000000;
     letter-spacing: 1px;
     text-align: center;
     overflow: hidden;
 }
 
 .tablaC table thead {
-    background-color: var(--primary);
+    background: #3c5aff;
     color: var(--header);    
 }
 
@@ -491,8 +491,7 @@ body{
     padding: 8px 18px;
 }
 
-.tablaC th, td {
-    
+.tablaC th, td {  
     padding: 7px 0;
 }
 
@@ -501,17 +500,16 @@ body{
 }
 
 .tablaC table tr:nth-child(even) {
-    background-color: var(--primary);
-    color: var(--header);
+    background: #ddd;
 }
 
 .tablaC table tbody tr:hover {
-    background-color: var(--text);
+    background: #f7555567;
     color: var(--header);
 }
 
 .icon-delete{
-    color: var(--text);
+    color: rgb(0, 8, 126);
 }
 .icon-panel{
     display: flex;

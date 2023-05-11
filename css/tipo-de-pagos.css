@@ -9,7 +9,6 @@
 .container-tipo-de-pagos{
     display: flex;
     justify-content: center;
-    margin-top: 11vh;
     margin-left: 11vw;
     border-radius: 10px;
 }
@@ -38,7 +37,7 @@ th,td{
 thead{
     background: #3c5aff;
     border-bottom: solid 4px black;
-    color: #fff;
+    color: var(--header);
 }
 tr:nth-child(even){
     background: #ddd;
