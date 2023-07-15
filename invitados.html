@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Inicio</title>
+	<!--=== CSS ====-->
+	<link rel="stylesheet" href="./css/styles.css">
+	<!-- LINK ICONOS -->
+	<script src="icons/all.min.js"></script>
+</head>
+<body>
+
+	<!--///////////////////////////// N A V  B A R /////////////////////////////////////-->
+<div class="container">
+    <div id="barra" class="barra">
+        <h1><a class="logo" href="#"><span>C</span>ondominio</a></h1>
+
+            <nav class="enlaces-a">
+            	<ul>
+            		<li class="enlaces">
+            			<a href="index.html">Inicio</a>
+            		</li>
+
+            		<li class="enlaces">
+            			<a href="#">Registros</a>
+            			<ul class="menu-vertical">
+            				<li>
+            				    <a href="empleados.html">Empleados</a>
+            				</li> 
+            				<li>
+            					<a href="viviendas.html">Viviendas</a>
+            				</li>
+            				<li>
+            					<a href="habitantes.html">Habitantes</a>
+                            </li> 
+                            <li>
+                                <a href="invitados.html">Invitados</a>
+                            </li>
+    
+            			</ul>
+            		</li>
+
+            		<li class="enlaces">
+            			<a href="#">Panel</a>
+            			<ul class="menu-vertical">
+            				<li>
+            				    <a href="cargos.html">Cargo</a>
+            				</li> 
+            				<li>
+            					<a href="manzana.html">Manzana</a>
+            				</li>
+            				<li>
+            					<a href="pagos.html">Pagos</a>
+            				</li>
+            			</ul>
+            		</li>
+
+            		<li class="enlaces">
+            			<a href="#">Reportes</a>
+            			<ul class="menu-vertical">
+            				<li>
+								<a href="reportes.html">Reportes</a>
+							</li> 
+            				<li>
+            					<a href="pagos.html">Pagos</a>
+            				</li>
+            				<li>
+            					<a href="solvencia.html">Solvencias</a>
+            				</li>
+            			</ul>
+            		</li>
+            	</ul>
+            </nav>
+        <div class="b-busqueda">
+          <form class="m-n" action="">				
+            <li>
+           <a href="#">Config &nbsp;<i class="fa fa-pencil spanA"></i></a>
+         </li>
+            
+            <li>
+           <a href="login.html">Salir &nbsp;<i class="fa fa-power-off spanA"></i></a>
+         </li>
+   
+         </form>
+        </div>
+    </div>                                                                                                        
+
+	<!--/////////////////////////// M E N U  L A T E R A L ////////////////////////////////////-->
+    <!-- <div class="main">
+            <div class="menu">
+                <ul>
+                    <li>
+						<a href="#">Config<i class="fa fa-pencil spanA"></i></a>
+					</li>
+                    <li>
+						<a href="#">Admin<i class="fa fa-user spanA"></i></a>
+					</li>
+                    <li>
+						<a href="login.html">Salir<i class="fa fa-power-off spanA"></i></a>
+					</li>
+                </ul>
+            </div> 
+    </div> -->
+    
+    <!--//////////////////////// FORMULARIO REGISTRO INVITADOS /////////////////////////////////-->
+
+    <div class="contenido CRegist">
+
+            <div class="form-registro tarjetR form-invitados">
+      
+              <div class="title">
+                <h1>
+                  <span>I</span>nvitados <span class="fa fa-check"></span>
+                </h1>
+              </div>
+      
+              <form name="">
+      
+                <div class="Container-input">
+                  <div class="inputs">
+      
+                      <!-- <div class="Ainput">
+                          <label for="parentesco">Parentesco</label>
+                          <input type="text" name="parentesco" id="parentesco" autocomplete="off" required>
+                        </div>     -->
+                                  
+                    <div class="Ainput">
+                      <label for="nombre">Nombre</label>
+                      <input type="text" name="nombre" id="nombre" autocomplete="off" required>
+                    </div>
+                    
+                    <div class="Ainput">
+                      <label for="apellido">Apellido</label>
+                      <input type="text" name="apellido" id="apellido" autocomplete="off" required>
+                    </div>
+      
+                    <!-- <div class="Ainput">
+                      <label for="ci">Cedula</label>
+                      <input type="text" name="ci" id="ci" autocomplete="off" required>
+                    </div>
+                    
+                    <div class="Ainput">
+                      <label for="cel">Teléfono</label>
+                      <input type="text" name="cel" id="tlf" autocomplete="off" required>
+                    </div> -->
+      
+                    <div class="Ainput c_sex">
+                        <label for="">Sexo</label>
+                        <div class="sexo">
+                          <div>
+                            <label for="f">F</label>
+                            <input type="radio" name="sex" id="f" value="f">
+                          </div>
+                          <div>
+                            <label for="m">M</label>
+                            <input type="radio" name="sex" id="m" value="m">
+                          </div>
+                        </div>
+                      </div>
+                                    
+                  </div>
+                </div>               
+      
+                <button type="submit" id="btn-registrar">Registrar</button>
+              </form>
+      
+            </div>
+          </div>
+      
+          <script src="js/file.js"></script>	       
+</body>
+</html>

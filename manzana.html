@@ -5,12 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Zona</title>
 	<!--=== CSS ====-->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <!-- LINK ICONS -->
     <script src="/icons/all.min.js"></script>
 </head>
 <body>
 
+    <!--////////////////////////////// N A V  B A R //////////////////////////////////////-->
 	<div class="container">
     <div id="barra" class="barra">
         <h1>
@@ -34,7 +35,10 @@
             				</li>
             				<li>
             					<a href="habitantes.html">Habitantes</a>
-            				</li>  
+                            </li>
+                            <li>
+                                <a href="invitados.html">Invitados</a>
+                            </li>  
             			</ul>
             		</li>
 
@@ -45,7 +49,7 @@
             				    <a href="cargos.html">Cargo</a>
             				</li> 
             				<li>
-            					<a href="zona.html">Zona</a>
+            					<a href="manzana.html">Manzana</a>
             				</li>
             				<li>
             					<a href="pagos.html">Pagos</a>
@@ -70,14 +74,21 @@
             	</ul>
             </nav>
         <div class="b-busqueda">
-    	   <form action="">
-    		   <input type="text" name="buscar" class="busqueda" autocomplete="off" placeholder="Buscar">
-    		   <!-- <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button> -->
-    	   </form>
+            <form class="m-n" action="">				
+                <li>
+                 <a href="#">Config &nbsp;<i class="fa fa-pencil spanA"></i></a>
+             </li>
+                
+                <li>
+                 <a href="login.html">Salir &nbsp;<i class="fa fa-power-off spanA"></i></a>
+             </li>
+ 
+             </form>
         </div>
     </div>                                                                                                        
 
-    <div class="main">
+    <!--///////////////////////////// M E N U  V E R T I C A L ////////////////////////////-->
+    <!-- <div class="main">
             <div class="menu">
                 <ul>
                     <li>
@@ -91,36 +102,35 @@
 					</li>
                 </ul>
             </div> 
-	</div>         
+	</div>          -->
 
-	<!-------------------------- P A N T A L L A - C A R G O S ------------------------>
+	<!-------------------------- P A N T A L L A - M A N Z A N A ------------------------>
 	<div class="contenido">
             <div class="tablaC">
 
-                <h2>Zona</h2>
+                <h2>Manzana</h2>
 
                 <form action="" class="asistencia" autocomplete="off">
                     <div class="CregisA">
-                        <input name="cargo" type="text" placeholder="Ingrese nuevo cargo" autofocus required>
+                        <input name="cargo" type="text" placeholder="Ingrese nueva manzana" autofocus required>
                         <button type="submit">Agregar</button>
                     </div>
                 </form>
 
-<table>
-    <thead>
-        <tr>
-            <th>Nº</th>
-            <th>Zona</th>
-            <th>ID</th>
-            <th>...</th>
-        </tr>
-    </thead>
-    <tbody>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nº</th>
+                        <th>Manzana</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+
+                <tbody>
             <tr>
 
                 <td>01</td>
-                <td>Zona 1</td>
-                <td>55</td>
+                <td>Manzana 1</td>
                 <td>
                     <a class="deleteA" href="#">
                         <i class="icon-delete fa-solid fa-trash-can"></i>
@@ -129,8 +139,7 @@
 
                 <tr>
                 	<td>02</td>
-                    <td>Zona 2</td>
-                    <td>56</td>
+                    <td>Manzana 2</td>
                 <td>
                       <a class="deleteA" href="#">
                           <i class="icon-delete fa-solid fa-trash-can"></i>
@@ -139,8 +148,7 @@
                 </tr>
 
                 <td>03</td>
-                <td>Zona 3</td>
-                <td>57</td>
+                <td>Manzana 3</td>
                 <td>
                     <a class="deleteA" href="#">
                         <i class="icon-delete fa-solid fa-trash-can"></i>
@@ -149,8 +157,7 @@
 
                 <tr>
                 	<td>04</td>
-                    <td>Zona 4</td>
-                    <td>58</td>
+                    <td>Manzana 4</td>
                 <td>
                       <a class="deleteA" href="#">
                           <i class="icon-delete fa-solid fa-trash-can"></i>

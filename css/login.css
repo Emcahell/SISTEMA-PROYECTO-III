@@ -5,6 +5,10 @@
     --text-p: #656565;
     --header: #fff;
 }
+*{
+    margin: 0;
+}
+
 body{
     display: flex;
     justify-content: center;
@@ -12,17 +16,30 @@ body{
     font-family: sans-serif;
     height: 100vh;
     overflow: hidden;
-    background-color: rgb(60, 57, 87);
-    /* background: linear-gradient(yellow 25%, blue 60%, red 5%); */
+    background-image: url(/img/urbanizacion-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(20px);
 }    
+body::before{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(44, 44, 44, 0.651);
+}
 .parent{
+    position: relative;
     display: flex;
     height: 500px;
     width: 800px;
     background: #161617;
     overflow: hidden;
-    box-shadow: 0px 10px 18px rgba(0 0 0 / .3);
+    box-shadow: 7px 10px 20px rgba(0 0 0 / .3);
 }
+
 .container-login{
     display: flex;
     justify-content: center;

@@ -5,12 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Registro de Empelados</title>
 	<!--=== CSS ====-->
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="./css/styles.css">
   <!-- LINK ICONS -->
   <script src="/icons/all.min.js"></script>
 </head>
 <body>
-	
+  
+  <!--////////////////////////// N A V  B A R ////////////////////////////////////////////-->
 <div class="container">
     <div id="barra" class="barra">
         <h1><a class="logo" href="#"><span>C</span>ondominio</a></h1>
@@ -32,7 +33,10 @@
             				</li>
             				<li>
             					<a href="habitantes.html">Habitantes</a>
-            				</li>  
+                    </li>
+                    <li>
+                        <a href="invitados.html">Invitados</a>
+                      </li>         
             			</ul>
             		</li>
 
@@ -43,7 +47,7 @@
             				    <a href="cargos.html">Cargo</a>
             				</li> 
             				<li>
-            					<a href="zona.html">Zona</a>
+            					<a href="manzana.html">Manzana</a>
             				</li>
             				<li>
             					<a href="pagos.html">Pagos</a>
@@ -69,14 +73,20 @@
             </nav>
 
         <div class="b-busqueda">
-    	   <form action="">
-    		   <input type="text" name="buscar" class="busqueda" autocomplete="off" placeholder="Buscar">
-    		   <!-- <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button> -->
-    	   </form>
+          <form class="m-n" action="">				
+            <li>
+           <a href="#">CONFIG &nbsp;<i class="fa fa-pencil spanA"></i></a>
+         </li>
+            
+            <li>
+           <a href="login.html">SALIR &nbsp;<i class="fa fa-power-off spanA"></i></a>
+         </li>
+         </form>
         </div>
     </div>                                                                                                        
 
-          <div class="main">
+    <!--/////////////////////////// M E N U  L A T E R A L ///////////////////////////////////-->
+          <!-- <div class="main">
               <div class="menu">
                   <ul>
                       <li>
@@ -90,13 +100,14 @@
                       </li>
                   </ul>
               </div> 
-      </div>         
+      </div>          -->
 
-<!-- FORMULARIO-REGISTRO-EMPELADOS -->
+<!--///////////////////////////// FORMULARIO-REGISTRO-EMPELADOS /////////////////////////////-->
 
 	<div class="contenido CRegist">
 
       <div class="form-registro tarjetR">
+        
         <div class="title">
           <h1>
             <span>E</span>mpleados <span class="fa fa-check"></span>
@@ -118,34 +129,35 @@
               </div>
 
               <div class="Ainput">
-                <label for="ci">CI</label>
-                <input type="text" name="ci" id="ci" autocomplete="off" required>
+                <label for="ci">Cedula</label>
+                <input type="number" name="ci" id="ci" autocomplete="off" required>
               </div>
 
               <div class="Ainput">
                 <label for="cargo">Cargo</label>
                 <select name="cargo" class="select_c">
+                    <option>Seleccione un cargo</option>
                     <option>Administrador</option>
-                    <option>Gerente</option>
-                    <option>Vigilante</option>
+                    <option>Conserge</option>
                     <option>Obrero</option>
+                    <option>Vigilante</option>
                 </select>
               </div>
 
-              <div class="Ainput">
+              <!-- <div class="Ainput">
                 <label for="correo">Correo</label>
                 <input type="email" name="correo" id="correo" autocomplete="off" required>
-              </div>
+              </div> -->
 
               <div class="Ainput">
                 <label for="cel">Teléfono</label>
-                <input type="text" name="cel" id="cel" autocomplete="off" required>
+                <input type="number" name="cel" id="cel" autocomplete="off" required>
               </div>
 
-              <div class="Ainput">
+              <!-- <div class="Ainput">
                 <label for="nac">Fecha de nacimiento</label>
                 <input type="date" name="nac" id="nac" autocomplete="off" required>
-              </div>
+              </div> -->
 
               <div class="Ainput c_sex">
                 <label for="">Sexo</label>
@@ -172,10 +184,11 @@
                 </div>
                 <span class="fa fa-camera iconP"></span>
               </div>
-
             </div>
+
           </div>
-          <button type="submit" id="btn">Continuar</button>
+
+          <button type="submit" id="btn">Registar</button>
         </form>
       </div>
     </div>

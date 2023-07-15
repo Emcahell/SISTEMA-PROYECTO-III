@@ -5,11 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Registro de Viviendas</title>
 	<!--=== CSS ====-->
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="./css/styles.css">
   <!-- link icons -->
   <script src="/icons/all.min.js"></script>
 </head>
 <body>
+
+<!--//////////////////////////// N A V  B A R  ///////////////////////////////////////////////-->
 	<div class="container">
     <div id="barra" class="barra">
         <h1><a class="logo" href="#"><span>C</span>ondominio</a></h1>
@@ -17,7 +19,7 @@
             <nav class="enlaces-a">
             	<ul>
             		<li class="enlaces">
-            			<a href="index.html">Inicio</a>
+            			<a href="./index.html">Inicio</a>
             		</li>
 
             		<li class="enlaces">
@@ -31,7 +33,10 @@
             				</li>
             				<li>
             					<a href="habitantes.html">Habitantes</a>
-            				</li>  
+                    </li>
+                    <li>
+                        <a href="invitados.html">Invitados</a>
+                      </li>          
             			</ul>
             		</li>
 
@@ -42,7 +47,7 @@
             				    <a href="cargos.html">Cargo</a>
             				</li> 
             				<li>
-            					<a href="zona.html">Zona</a>
+            					<a href="manzana.html">Manzana</a>
             				</li>
             				<li>
             					<a href="pagos.html">Pagos</a>
@@ -67,14 +72,21 @@
             	</ul>
             </nav>
         <div class="b-busqueda">
-    	   <form action="">
-    		   <input type="text" name="buscar" class="busqueda" autocomplete="off" placeholder="Buscar">
-    		   <!-- <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button> -->
-    	   </form>
+          <form class="m-n" action="">				
+            <li>
+           <a href="#">Config &nbsp;<i class="fa fa-pencil spanA"></i></a>
+         </li>
+            
+            <li>
+           <a href="login.html">Salir &nbsp;<i class="fa fa-power-off spanA"></i></a>
+         </li>
+   
+         </form>
         </div>
     </div>                                                                                                        
 
-        <div class="main">
+<!--/////////////////////////////////// M E N U  L A T E R A L  ////////////////////////////////-->
+        <!-- <div class="main">
             <div class="menu">
                 <ul>
                     <li>
@@ -89,9 +101,9 @@
                 </ul>
             </div> 
       </div>         
+ -->
 
-
-<!-- FORMULARIO-REGISTRO-EMPELADOS -->
+<!--////////////////////// FORMULARIO REGISTRO DE VIVIENDAS ///////////////////////////////--->
 
 	<div class="contenido CRegist">
 
@@ -103,50 +115,64 @@
           </h1>
         </div>
 
+        <!-- <div class="Cimg">
+          <div class="SubirF">
+            <div class="ImgS">
+              <img id="previewI" class="preview" src="/img/urbanizacion-1.jpg">
+              <span class="fa fa-plus iconPLUS"></span>
+              <input name="image" id="inputF" type="file" required>
+            </div>
+            <span class="fa fa-camera iconP"></span>
+          </div>
+        </div> -->
+
         <form name="">
           <div class="Container-input">
 
             <div class="inputs">
-              <div class="Ainput">
-                <label for="zona">Zona</label>
-                <select name="zona" class="select_c">
-                    <option>Mustang</option>
-                    <option>Challenger</option>
-                    <option>Camaro</option>
-                    <option>Twingo</option>
-                </select>
-              </div>
-
-              <div class="Ainput">
-                <label for="apellido">Dueño</label>
-                <input type="text" name="dueño" id="apellido" autocomplete="off" required>
-              </div>
-
-              <div class="Ainput">
-                <label for="ci">Habitantes</label>
-                <input type="text" name="habitantes" id="ci" autocomplete="off" required>
-              </div>
-
-              <div class="Ainput">
-                <label for="correo">Autorizados</label>
-                <input type="text" name="autorizados" id="correo" autocomplete="off" required>
-              </div>
-            </div>
-
-            <div class="Cimg">
-              <div class="SubirF">
-                <div class="ImgS">
-                  <img id="previewI" class="preview" src="/img/urbanizacion-1.jpg">
-                  <span class="fa fa-plus iconPLUS"></span>
-                  <input name="image" id="inputF" type="file" required>
+              <div class="Ainput manzana">
+                  <label for="manzana">Manzana</label>
+                  <select name="manzana" class="select_c" id="">
+                    <option value="">Seleccione manzana</option>
+                    <option value="">Manzana 1</option>
+                    <option value="">Manzana 2</option>
+                    <option value="">Manzana 3</option>
+                    <option value="">Manzana 4</option>
+                    <option value="">Manzana 5</option>
+                    <option value="">Manzana 6</option>
+                    <option value="">Manzana 7</option>
+                  </select>
                 </div>
-                <span class="fa fa-camera iconP"></span>
+                
+                <div class="Ainput nro-casa">
+                  <label for="dueño">Nro de Casa</label>
+                  <input type="text" name="Nro-casa" id="Nro-casa" autocomplete="off" required>
+                </div>
+                
+                <div class="Ainput dueño">
+                  <label for="dueño">Cedula</label>
+                  <input type="number" name="cedula" id="cedula">
+                </div>
+
+                <div class="Ainput">
+                    <label for="">Dueño</label>
+                    <input type="text" name="dueño" id="dueño" autocomplete="off" required>
+                  </div>
+
+              <div class="Ainput">
+                <label for="">Usuario</label>
+                <input type="text" name="user" id="user" autocomplete="off" required>
+              </div>
+
+              <div class="Ainput">
+                <label for="pass">Contraceña</label>
+                <input type="password" name="password" id="password" autocomplete="off" required>
               </div>
             </div>
-            
+        
           </div>
 
-          <button type="submit" id="btn">Continuar</button>
+          <button type="submit" id="btn-registrar">Registrar</button>
         </form>
         
       </div>
